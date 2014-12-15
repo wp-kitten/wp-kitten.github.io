@@ -1,0 +1,41 @@
+/*!
+ * Start Bootstrap - Thumbnail Gallery HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+.thumbnail {
+    text-align: center !important;
+    color: #333;
+}
+.thumbnail:hover, .thumbnail:active{ color: #337ab7;}
+
+.wp-thumb-details {
+    margin: 0 5px;
+}
+.wp-thumb-details .wp-thumb-title{
+    font-weight: 800;
+    color: #4183c4;
+}
+.wp-thumb-details .wp-thumb-description {
+    color: #808080;
+}
+
+#wp-header{
+    min-height: 300px;
+    margin: 0 0; padding: 0 0;
+    background: url('../images/header.jpg');
+}
+
+footer {
+    margin: 50px 0;
+}
+
