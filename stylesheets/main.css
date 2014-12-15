@@ -23,8 +23,17 @@ body {
 }
 .wp-thumb-details .wp-thumb-title{
     font-weight: 800;
-    color: #4183c4;
 }
+.wp-thumb-details .wp-thumb-title a {
+	color: #333;
+}
+.wp-thumb-details .wp-thumb-title a:hover,
+.wp-thumb-details .wp-thumb-title a:active,
+.wp-thumb-details .wp-thumb-title a:focus {
+	color: #337ab7;
+}
+
+
 .wp-thumb-details .wp-thumb-description {
     color: #808080;
 }
