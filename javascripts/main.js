@@ -14,4 +14,9 @@ var WpProjects = [
         'description' : 'Provides an easy way for WordPress plugin developers to display admin notifications',
         'url' : 'https://github.com/wp-kitten/WPK-Notifications'
     }
+    ,{
+        'title': 'Dev',
+        'description' : 'PHP, MySQL, Javascript and everything web development',
+        'url' : 'https://github.com/wp-kitten/dev'
+    }
 ];
