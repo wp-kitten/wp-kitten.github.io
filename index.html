@@ -25,32 +25,36 @@
     <![endif]-->
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 
     <script src="javascripts/main.js"></script>
     <script type="text/javascript">
-        jQuery(function($){
-            var wrapper = $('#wp-projects');
-            function createProject($, title, description, url){
-                var str = '<div class="col-lg-3 col-md-4 col-xs-6 thumb">';
-                str += '<a class="thumbnail" href="'+url+'" title="'+description+'">';
-                str += '<i class="fa fa-github" style="font-size:500%;"></i>';
-                str += '</a>';
-                str += '<div class="wp-thumb-details">';
-                str += '<p class="wp-thumb-title"><a href="'+url+'">'+title+'</p></a>';
-                str += '<p class="wp-thumb-description">'+description+'</p>';
-                str += '</div>';
-                str += '</div>';
-                return $(str);
-            }
-            $.each(WpProjects, function(i,e){
-                wrapper.append(createProject($, e.title, e.description, e.url));
-            });
-
+        /*global jQuery:false, _:false*/
+        jQuery(function($) {
+            var $template = $('#projectsTemplate');
+            var compiledTemplate = _.template($template.html());
+            $('#wp-projects').append(compiledTemplate({projects: WpProjects}));
+            $template.remove();
         });
     </script>
 </head>
 
 <body>
+    <script id="projectsTemplate" type="text/html">
+        <% _.each(projects, function(item) { %>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a class="thumbnail" href="<%-item.url%>" title="<%-item.description%>">
+                <i class="fa fa-github" style="font-size:500%"></i>
+                </a>
+            <div class="wp-thumb-details">
+                <p class="wp-thumb-title">
+                    <a href="<%-item.url%>"><%-item.title%></a>
+                    </p>
+                <p class="wp-thumb-description"><%-item.description%></p>
+                </div>
+            </div>
+        <% }); %>
+    </script>
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="margin-bottom: 0;">
