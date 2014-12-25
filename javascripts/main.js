@@ -19,4 +19,9 @@ var WpProjects = [
         'description' : 'PHP, MySQL, Javascript and everything web development',
         'url' : 'https://github.com/wp-kitten/dev'
     }
+    ,{
+        'title': 'PHP Hooks',
+        'description' : 'This is a fork of PHP Hooks Class (https://github.com/bainternet/PHP-Hooks/) which extracted the hook functionality from WordPress. This version, unlike the original, is providing the action and filter functions globally, just like WordPress does.',
+        'url' : 'https://github.com/wp-kitten/PHP-Hooks'
+    }
 ];
