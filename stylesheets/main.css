@@ -36,6 +36,7 @@ body {
 
 .wp-thumb-details .wp-thumb-description {
     color: #808080;
+    min-height: 100px;
 }
 
 #wp-header{
