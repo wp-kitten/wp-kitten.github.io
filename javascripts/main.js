@@ -34,4 +34,14 @@ var WpProjects = [
         'description' : "Reposition the [post's, page's] Publish/update button to the admin bar. Useful when the page contains many elements and requires a lot of scrolling in order to publish/update the post/page.",
         'url' : 'https://github.com/wp-kitten/reposition-publish-button'
     }
+    ,{
+        'title': 'WPK Scripts Combine',
+        'description' : "The WpkScriptsCombine class provides an easy way to load and combine (and minify using the JShrink class) multiple scripts or stylesheets into a single file that will be automatically included in the page header/footer of your website. This class provides a great way for theme developers, and not only, to limit the number of http requests in order to load a bunch of scripts and stylesheets required by a theme.",
+        'url' : 'https://github.com/wp-kitten/wpk-scripts-combine'
+    }
+    ,{
+        'title': 'WPK Theme Menu',
+        'description' : "The WpkThemeMenu offers a simple and easy way for plugins to add custom menu items to the internal menu created by the theme.",
+        'url' : 'https://github.com/wp-kitten/WpkThemeMenu'
+    }
 ];
