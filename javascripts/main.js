@@ -44,4 +44,9 @@ var WpProjects = [
         'description' : "The WpkThemeMenu offers a simple and easy way for plugins to add custom menu items to the internal menu created by the theme.",
         'url' : 'https://github.com/wp-kitten/WpkThemeMenu'
     }
+    ,{
+        'title': 'WPK External Images Gallery',
+        'description' : "The WPK External Images Gallery plugin provides you an easy way of creating image galleries by using remotely stored images (feature which is not available by default in Wordpress), and integrates perfectly with any WordPress installation, be it a single installation or a MultiSite one.",
+        'url' : 'http://codecanyon.net/item/wpk-external-images-gallery/13038873'
+    }
 ];
